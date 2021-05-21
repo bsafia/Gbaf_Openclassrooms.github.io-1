@@ -1,0 +1,392 @@
+body{
+    background-image: url("greyzz.png");
+}
+#logo{/* logo main*/
+    width: 100px;
+    margin: 7px;
+    background:#fff;
+    border-radius: 5px;
+    
+}
+header{
+    background:linear-gradient(135deg ,#312f2f,#e20606);
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+header nav {
+    display: flex;
+    height: 3em;
+    width: 12em;
+    flex-direction: row;
+    padding-top: 10px;
+    align-items: center;
+    color: #fff;
+}
+
+.info_name{
+    float: right;
+}
+
+#présentation{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:justify;
+    margin-left:35px;
+    margin-right:35px;
+    /*max-width: 500px;
+    min-width: 400px;*/
+}
+#présentation h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    
+}
+#présentation ul li{
+    font-weight: bolder;
+    color:blue;
+}
+
+#acteurs{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:start;
+    margin-left:35px;
+    margin-right:35px;
+    
+}
+/*partie list des acteurs*/
+#acteur_list ul li{
+    color:blue;
+}
+#acteur_list2 ul li{
+    color:blue;
+}
+article{/* partie acteur avec text*/
+    display:block;
+    border:5px rgb(200, 225, 240);
+}
+
+.logo1{/*logo pour tout acteur*/
+    float: left;
+    height: 50px;
+    width:200px;
+    margin-top:0px ;  
+}
+
+#text_acteur{
+    margin: 0px 100px 5px 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#text_acteur2{
+    margin: 0px 100px 5px 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#text_acteur3{
+    margin: 0px 100px 5px 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+#text_acteur4{
+    margin: 0px 100px 5px 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.section{/*information des acteurs*/
+
+    text-align: center;
+    border:double rgb(200, 225, 240);
+    margin:10px 50px 20px 50px;
+    box-shadow: 10px 5px 5px  rgb(199, 206, 211); 
+    padding-bottom: 20px;
+    background-image: url("greyzz.png");
+}
+footer {
+    text-align: center;
+    font-size: 18px;
+    
+}
+article{
+    background:linear-gradient(-135deg ,#3d3d3d,#e3dbdb);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* css page formation_co*/
+#formation_logo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+.formation_text{
+    text-align: justify;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.formation_text ul li{
+    color:blue;
+}
+.like{
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    width:auto;
+    height:35px;
+    background:linear-gradient(135deg ,#312f2f,#e20606);
+    color:white;
+    font-size:15px ;
+    font-weight:600;
+    padding-right: 10px;
+    margin-left: 10px; 
+}
+.like:hover{
+    background:linear-gradient(-135deg ,#312f2f,#e20606)
+}
+
+button{
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    width:auto;
+    height:35px;
+    background:linear-gradient(135deg ,#312f2f,#e20606);
+    color:white;
+    font-size:15px ;
+    font-weight:600;
+
+}
+.btn_comnt input{
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    width:40%;
+    height:40px;
+    background:linear-gradient(135deg ,#312f2f,#e20606);
+    color:white;
+    font-size:15px ;
+    font-weight:600;
+}
+.nov_comm{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 17px;
+    padding-right: 35px;
+}
+.nov_comm input[type="button"]{
+    background:linear-gradient(135deg ,#312f2f,#e20606);
+    color:white;
+    font-size:15px;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+      
+}
+.nov_comm input[type="button"]:hover{
+    background:linear-gradient(-135deg ,#312f2f,#e20606)
+}
+
+i{
+    padding:10px;
+}
+.btn_comnt input:hover{
+    background:linear-gradient(-135deg ,#312f2f,#e20606)
+
+}
+button:hover{
+    background:linear-gradient(-135deg ,#312f2f,#e20606)
+}
+button:active{
+    transform: translateY(4px);
+    }
+
+.esp_cmnt label{
+    color: #fff;
+    font-size: 20px;
+    margin-right:80%;
+    margin-bottom: 15px;
+}
+/* css page DSA*/
+.dsa_text{
+    text-align: justify;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+#dsa{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+section h2{
+    margin-left:20px
+}
+section h3{
+    margin-left: auto;
+    margin-right: 150px;
+
+}
+hr{
+    margin-top: 3px;
+    border-width: 2px;
+    border-style:outset;
+   
+}
+
+/* css page Protectpeople*/
+#protect_logo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.protect_text{
+    text-align: justify;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.protect_text ul {
+    color:blue
+}
+/* css page CDE*/
+#cde_logo{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+.cde_text{
+    text-align: justify;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+/*commentaire*/
+
+textarea{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.5; 
+    width: 95%;
+    border-radius: 5px;
+    resize: none;
+    padding:10px;
+}
+
+.esp_cmnt{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.esp_cmnt input{
+    margin: 10px;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    width:40%;
+    height:40px;
+    background:linear-gradient(135deg ,#312f2f,#e20606);
+    color:white;
+    font-size:18px ;
+    font-weight:600;
+
+}
+.esp_cmnt input:hover{
+    background:linear-gradient(-135deg ,#312f2f,#e20606);
+}
+/* php style*/
+.phpcomment{
+    background:linear-gradient(-135deg ,#3d3d3d,#e3dbdb);
+}
+section article{
+    
+    border-radius: 5px;
+}
+.phpcomment h3{
+    background:linear-gradient(135deg ,#312f2f,#e20606);
+    color:white;
+    padding:20px;
+    margin-right:0;
+    font-size:25px;
+}
+article{
+    padding:0;
+    background-image: url("greyzz.png");
+   /* margin:0 50px;
+    padding-left: 10px;
+    padding-right: 50px;*/
+
+}
+.comment_header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+.msgphp{
+    text-align: justify;
+    font-size:13px;
+    margin-bottom: 50px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 500px){
+    header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    #logo{
+        width: 50px;
+    }
+    .logo1{
+        float: none;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .section{
+        margin:10px 20px 20px 20px;
+    }
+    #text_acteur{
+        margin:inherit ;
+        text-align: -webkit-auto;
+    }
+    #text_acteur2{
+        margin:inherit ;
+        text-align: -webkit-auto;
+    }
+    #text_acteur3{
+    margin:inherit ;
+    text-align: -webkit-auto;
+    }
+
+    #text_acteur4{
+    margin:inherit ;
+    text-align: -webkit-auto;
+    }
+}
+
+
