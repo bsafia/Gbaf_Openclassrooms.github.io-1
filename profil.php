@@ -68,12 +68,12 @@ if(isset($_SESSION['nom'])) {
                                     <input type="email"  name="newmail"  value="<?= $reqp['mail']; ?>" class="form_input" required />
                             </div>
                             <div class="input_box">
-                                <span class="details">Mot de passe</span>
-                                    <input type="password"  name="newmdp" value="<?= $reqp['motdepasse']; ?>" class="form_input" required />
+                                <span class="details">Nouveau Mot de passe</span>
+                                    <input type="password"  name="newmdp1"  class="form_input" required />
                             </div>
                             <div class="input_box">
-                                <span class="details">Nouveau Mot de passe</span>
-                                    <input type="password"  name="newmdp2" value="<?= $reqp['motdepasse2']; ?>" class="form_input" required />
+                                <span class="details">Confirmation Mot de passe</span>
+                                    <input type="password"  name="newmdp2" class="form_input" required />
                             </div>
                             <div class="input_box">
                                 <span class="details">Question</span>

@@ -18,6 +18,7 @@ if (isset($_POST['forgetpw'])) {
     $question = htmlspecialchars($_POST['question']);
     $reponse = htmlspecialchars($_POST['reponse']);
     $mdp = sha1($_POST['mdp']);
+    $mdp2 = sha1($_POST['mdp2']);
         if(!empty($_POST['nomuser'])&& !empty($_POST['question']) &&!empty($_POST['reponse'])) {
             $selectuser = $bdd->prepare ("SELECT * FROM inscription WHERE nomuser= ? ");
             $selectuser->execute(array($nomuser));
@@ -27,6 +28,8 @@ if (isset($_POST['forgetpw'])) {
                 if($_POST['mdp'] == $_POST['mdp2']) {
                     $insertmdp = $bdd->prepare("UPDATE inscription Set motdepasse= ? WHERE nomuser = ?");
                     $insertmdp->execute(array($mdp, $nomuser)); 
+                    $insertmdp = $bdd->prepare("UPDATE inscription Set motdepasse2= ? WHERE nomuser = ?");
+                    $insertmdp->execute(array($mdp2, $nomuser));
                     header("Location:Connexion.php");
                 }
             }

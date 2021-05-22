@@ -33,17 +33,19 @@ if(isset($_POST['update'])) {
         $insertmail->execute(array($newmail, $_SESSION['id']));
     }    
                 
-    if(isset($_POST['newmdp']) AND !empty($_POST['newmdp']) AND isset($_POST['newmdp2']) AND !empty($_POST['newmdp2']))  {
-        $newmdp = sha1($_POST['newmdp']);
-        $newmdp2 = sha1($_POST['newmdp2']);
+    if(isset($_POST['newmdp1']) AND !empty($_POST['newmdp1']) AND isset($_POST['newmdp2']) AND !empty($_POST['newmdp2']))  {
+        $mdp = sha1($_POST['newmdp1']);
+        $mdp2 = sha1($_POST['newmdp2']);
 
         if($newmdp == $newmdp2) {
             $insertmdp = $bdd->prepare("UPDATE inscription SET motdepasse = ? WHERE id = ?");
-            $insertmdp->execute(array($newmdp, $_SESSION['id']));
+            $insertmdp->execute(array($mdp, $_SESSION['id']));
+            $insertmdp = $bdd->prepare("UPDATE inscription SET motdepasse2 = ? WHERE id = ?");
+            $insertmdp->execute(array($mdp2, $_SESSION['id']));
         }        
     }            
 }
-header('Location:deconnexion.php');
+header('Location:connexion.php');
 
 ?>
 
